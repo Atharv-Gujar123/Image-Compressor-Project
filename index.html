@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=image" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=upload" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=download" />
+</head>
+
+<body>
+  <h1 class="Title">Image Compressor</h1>
+  <div class="upload">
+    <div class="img_upload">
+      <span class="header">
+        <h2>Upload Image</h2>
+        <br />
+        <p>Select an image for compression</p>
+      </span>
+      <div class="upload-box">
+        <div class="content">
+          <input type="file" accept="*/image" class="file" />
+          <span class="material-symbols-sharp"> upload </span>
+          <p>Click to upload an image</p>
+        </div>
+        <img id="preview" />
+      </div>
+    </div>
+    <div class="FileName">
+    </div>
+    <span class="Format_Selector">
+      <h2>Output Format</h2>
+      <select id="format">
+        <option value="image/jpeg">JPEG (Default)</option>
+        <option value="image/png">PNG (Lossless)</option>
+        <option value="image/webp">WEBP (Modern Format)</option>
+      </select>
+      <div class="buttons">
+        <button class="btn">Compress</button>
+      </div>
+    </span>
+  </div>
+  </div>
+  <div class="CompressedImageContainer">
+    <div class="upload">
+      <span class="header">
+        <h2>Compressed Image</h2>
+      </span>
+      <div class="FileName"></div>
+      <div class="buttons">
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+  </div>
+  <img class="CompressedImage" />
+  <canvas id="canvas"></canvas>
+  <script src="script.js"></script>
+</body>
+
+</html>
