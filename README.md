@@ -7,4 +7,4 @@ Also provides JPEG, PNG and WEBP output format options for compression.
 
 - HTML
 - CSS
-- JavaScript
+- JavaScript 
